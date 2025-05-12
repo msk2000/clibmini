@@ -1,6 +1,28 @@
-// clibmini.h
-// In the absense of a lot of useful c functions to print and manipulate data
-// I wrote these functions to help the kernel get some work done
+/*
+ * clibmini.h - A Minimal C Library for Kernel/OS Development
+ *
+ * Author: M Safat Khan
+ * License: GPL
+ * 
+ * Description:
+ * This header defines a lightweight set of utility functions designed to support 
+ * kernel or bare-metal OS development, where full standard C libraries are typically 
+ * unavailable or unsuitable. It includes essential routines for formatted printing, 
+ * string manipulation, and data conversion (e.g., integers, floating points, and hex).
+ * 
+ * Key Features:
+ *  - Basic printf-style formatted output via `print`
+ *  - Custom string length and copy functions
+ *  - Integer and floating-point to string conversions
+ *  - Hexadecimal conversion with optional uppercase output
+ *
+ * Intended Use:
+ *  Use in low-level environments where dependencies must be minimal and reliable.
+ *  These functions are self-contained and do not rely on libc or dynamic memory.
+ *
+ * Notes:
+ *  This header is C and C++ compatible via `extern "C"`.
+ */
 #ifndef CLIBMINI_H
 #define CLIBMINI_H
 
